@@ -5,12 +5,12 @@ console.log('Hello from JavaScript!');
 alert("Happy Thorsday Xerxes");
 
 // the following line will show the OK/CANCEL confirm dialog
-var confirmed = confirm('Are you sure you want to do XYZ?');
+let confirmed = confirm('Are you sure you want to do XYZ?');
 console.log(confirmed); // will be either true or false
 
 alert ('Welcome to my Website!');
 
-var userInput = prompt('What is your favorite color?:');
+let userInput = prompt('What is your favorite color?:');
 console.log('Great!'+ userInput + 'is my favorite color too!');
 
 //Movies
@@ -19,9 +19,9 @@ prompt('How many days did you rent The Little Mermaid?');
 let brotherBear = 5;
 prompt('How many days did you rent Brother Bear?');
 let Hercules = 1;
-const priceeach = 3;
+const priceEach = 3;
 let total = theLittleMermaid + brotherBear + Hercules;
-let cost = priceeach + total;
+let cost = priceEach + total;
 alert (cost);
 
 //Pay this week
@@ -31,7 +31,7 @@ alert (paymentThisWeek);
 
 //Class enrollment
 alert("Let's enroll in class!");
-let classFull = confirm("is the class full?");
+let classFull = confirm("Is the class full?");
 let classUnavailable = confirm("Do your existing classes clash with this class time?");
 let studentEnrolled = (!classFull && !classUnavailable);
 if(studentEnrolled == true) {
@@ -59,6 +59,6 @@ else if (premiumMember = false && thingsBought >= 2) {
     alert("You qualify for our product offer!");
 }
 
-else () {
+else {
     alert ("Sorry, you do not qualify for our product offer.");
 }
