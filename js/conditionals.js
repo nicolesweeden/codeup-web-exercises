@@ -3,12 +3,12 @@
 /* ########################################################################## */
 
 /**
- * TODO:
+ * TODO: DID
  * Create a function named `analyzeColor` that accepts a string that is a color
  * name as input. This function should return a message which relates to the
  * color stated in the argument of the function. For colors you do not have
  * responses written for, return a string stating so
- *
+
  * Example:
  *  > analyzeColor('blue') // returns "blue is the color of the sky"
  *  > analyzeColor('red') // returns "Strawberries are red"
@@ -22,6 +22,25 @@
  * console.logging the function's return value
  */
 
+
+/*let analyzeColor = prompt("Enter a color.").toLowerCase();
+
+switch (analyzeColor) {
+    case "red":
+        alert("Apples are red.");
+        break;
+    case "blue":
+        alert("The ocean is blue.");
+        break;
+    case "yellow":
+        alert("I love yellow.");
+        break;
+    default:
+        alert("! Nice!");
+        break;
+}
+*/
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -29,14 +48,21 @@
 //                  will contain a different color every time the page loads)
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
-/**
- * TODO:
+/*
+ * TODO: NOT DONE
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
 
+prompt("Enter a color");
+  if (randomColor === "red") {
+   alert("Apples are red.");
+} else if (randomColor === "orange"); {
+   alert("Oranges are orange.");
+}
+
 /**
- * TODO:
+ * TODO: DID NOT DO BC NOT DONE ABOVE
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
 
@@ -69,6 +95,27 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
+function calculateTotal () {
+    let luckyNumber = Math.floor(Math.random() * 6);
+    if luckyNumber === 0;
+    alert("Sorry, you have no discount today.");
+} else if {
+    luckyNumber === 1;
+    alert("Congrats! You get a 10% discount!");
+} else if {
+    luckyNumber === 2;
+    alert("Congrats! You get a 25% discount!");
+} else if {
+    luckyNumber === 3;
+    alert("Congrats! You get a 35% discount!");
+} else if {
+    luckyNumber === 4;
+    alert("Congrats! You get a 50% discount!");
+} else if {
+    luckyNumber === 5;
+    alert("Congrats! You everything for FREE!");
+    break;
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -78,7 +125,14 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+
+var luckyNumber = Math.floor(Math.random() * 6);
+prompt("Enter your total bill.")
+
+function calculateTotal () {
+
+}
+
 
 /**
  * TODO:
@@ -98,3 +152,9 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+let number = confirm("Would you like to enter a number?");
+
+if number === true {
+
+}
