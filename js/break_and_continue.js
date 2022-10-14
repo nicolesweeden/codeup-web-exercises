@@ -13,9 +13,11 @@ if(userInput % 2 !== 0) {
 }
 for (var i = 1; i <=50 ; i++) {
 
-    if (i % 2 !== 0) {
+    if (i % 2 == 0) {
+        continue;
+    } else if(userInput == i) {
         continue;
     }
 
-    console.log('Here is a lovely even number: ' + i);
+    console.log('Here is a lovely odd number: ' + i);
 }
