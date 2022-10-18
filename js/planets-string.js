@@ -11,9 +11,9 @@
      * console.log planetsArray to check your work
      */
 
-    console.log(planetsArray);
-    let planetsString.split);
-
+    console.log(planetsString);
+    var planetsArray = planetsString.split();
+    console.log(typeof planetsArray);
     /**
      * TODO:
      * Create a string with <br> tags between each planet. console.log() your
