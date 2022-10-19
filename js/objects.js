@@ -52,6 +52,12 @@
         {name: 'George', amount: 320}
     ];
 
+    let totalBeforeDiscount === amount;
+if (totalBeforeDiscount >200) {
+    alert("Congrats! You spent " + this.parseFloat(amount) + "and qualify for a 12% discount!")
+    return ((totalBeforeDiscount * .12) - totalBeforeDiscount)
+
+
 
 
     /** TODO:
@@ -91,6 +97,11 @@
      *      ---
      *      ...
      */
+
+books.foreach(function(book){
+    console.log("book#" + (books.indexOf(book) +1))
+    console.log("title: " + book.title)
+}
 
     /**
      * Bonus:
