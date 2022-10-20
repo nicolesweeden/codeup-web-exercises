@@ -17,9 +17,9 @@
 
     let apples = {
         name: "apples"
-        quantity: "3"
+        quantity: 3,
         price: "1.99"
-    }
+    };
     console.log(getPrice(apples));
 
 })();
