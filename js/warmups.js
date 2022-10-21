@@ -1,8 +1,8 @@
-(function(){
+(function () {
     "use strict";
 
 
-
+//Warmup #1
     // Write a function that when passed an object will return the value of the object’s price property.
     //     Ex. let obj = {name: “Potatoes”, quantity: 2, price: “$7.89"};
     // getPrice(obj); // returns “$7.89”
@@ -22,4 +22,45 @@
     };
     console.log(getPrice(apples));
 
+
+    //Warmup #2
+    // Write a function that when passed an array will return the longest string from the array.
+    //     Ex. const arr = [“Green”, “Blue”, “Periwinkle”];
+    // getLongestString(arr) // Returns “Periwinkle”
+
+
+//["Pink", "Lavender", "Ecru"]
+    let longest = arr.reduce(
+        function (a, b) {
+            return a.length > b.length ? a : b;
+        }
+    );
+    console.log(longest);
+
+//David's solution:
+
+    function getlongestString(arr) {
+        let longestStr = "";
+        for (let str of arr) {
+            if (str.length > longestStr.length) {
+                longestStr = str;
+            }
+        }
+        return longestStr;
+    }
+
+    const colors = ["Pink", "Lavender", "Ecru"];
+    console.log(getlongestString(colors));
+
+
+
+
+
+
+
+
+
+
+
+    //Dont delete bottom of IIFE
 })();
