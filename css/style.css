@@ -2,3 +2,16 @@
     color: purple;
     text-decoration: underline;
 }
+
+.em-wider {
+    letter-spacing: 2px;
+}
+
+div {
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: deeppink;
+}
+
