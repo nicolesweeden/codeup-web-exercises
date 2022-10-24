@@ -5,6 +5,7 @@
 
 .em-wider {
     letter-spacing: 2px;
+    text-align: center;
 }
 
 div {
@@ -13,5 +14,32 @@ div {
     font-style: normal;
     letter-spacing: 1px;
     color: deeppink;
+    text-decoration: underline;
+}
+
+body {
+    background-image: url("/img/gradient.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    font-style: italic;
+}
+
+ol { list-style: upper-alpha; }
+ul { list-style: square; }
+
+a:link {    /* unvisited link */
+    color: #ff0000;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+a:visited {    /* visited link */
+    color: #ff00ff;
+}
+a:hover {    /* mouse over link */
+    color: #00ff00;
+    border-bottom: none;
+}
+a:active {    /* active link */
+    color: #00ffff;
 }
 
