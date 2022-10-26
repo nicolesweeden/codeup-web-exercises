@@ -3,7 +3,7 @@
 (function(){
 
     /**
-     * TODO:
+     * TODO: DONE
      * Create a function called 'sayHello' that takes a parameter 'name'.
      * When called, the function should return a message that says hello to the passed in name.
      *
@@ -11,10 +11,11 @@
      * > sayHello("codeup") // returns "Hello, codeup!"
      */
 
-    sayHello();
     function sayHello (name) {
-        return console.log("Hello," + name);
+        return ("Hello, " + name + "!");
     }
+
+    console.log(sayHello("me"));
 
     /**
      * TODO:
@@ -23,8 +24,10 @@
      *
      * console.log 'helloMessage' to check your work
      */
+
     let helloMessage = sayHello(name: "Nicole");
     console.log(helloMessage);
+
 
     /**
      * TODO:
