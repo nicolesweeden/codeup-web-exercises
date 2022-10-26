@@ -18,16 +18,15 @@
     console.log(sayHello("me"));
 
     /**
-     * TODO:
+     * TODO: Done
      * Call the function 'sayHello' and pass your name as a string literal argument.
      * Store the result of the function call in a variable named 'helloMessage'.
      *
      * console.log 'helloMessage' to check your work
      */
 
-    let helloMessage = sayHello(name: "Nicole");
+    let helloMessage = sayHello("Nicole");
     console.log(helloMessage);
-
 
     /**
      * TODO:
@@ -35,6 +34,9 @@
      * variable to the 'sayHello' function. You should see the same output in the
      * console.
      */
+
+
+
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -58,6 +60,14 @@
      * number)
      */
 
+
+
+
+
+
+
+
+
     isTwo();
     console.log(isTwo(anyNumber));
     function isTwo(anyNumber) {
@@ -65,6 +75,7 @@
         return true;
         } else { return false }
     }
+
 
     /**
      * TODO:
@@ -90,8 +101,8 @@
      * then display the dollar amount they should tip
      */
 
-    let tipPercent = prompt(message: "What percentage would you like to tip?")
-    let totalBill = prompt(message: "What is your total bill?")
+    let tipPercent = prompt("What percentage would you like to tip?")
+    let totalBill = prompt("What is your total bill?")
     console.log (calculateTip(totalBill, tipPercent));
     alert("Here is your tip amount." + calculateTip(totalBill, tipPercent));
 
@@ -110,7 +121,7 @@
      * > applyDiscount(45.99, 0.12) // 40.4712
      */
 
-function applyDiscount (priceInput, discountPercent); {
+function applyDiscount (priceInput, discountPercent) {
     let applyDiscount = ((priceInput) * (discountPercent));
     }
 

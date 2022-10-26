@@ -20,7 +20,7 @@ fieldset {
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     padding: 1em; /* There must be 1em between the content and the border of this element */
-    border: 0px; /* It should have no border */
+    border: 0; /* It should have no border */
     background-color: white;/* Its background should be white */
 }
 
@@ -56,10 +56,9 @@ fieldset {
     padding-bottom: 4px;
     margin-top: .5em; /* It should have a separation of .5em from elements on top of it and below it */
     margin-bottom: .5em;
-    width: calc(var(--variable-width));/* You'll need to use the `calc` function to make the width of this element match the width of the button */
+    width: calc(100% - 4px);/* You'll need to use the `calc` function to make the width of this element match the width of the button */
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
-    width: 100%;
 }
 
 
