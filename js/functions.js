@@ -29,21 +29,21 @@
     console.log(helloMessage);
 
     /**
-     * TODO:
+     * TODO: Done
      * Store your name as a string in a variable named 'myName', and pass that
      * variable to the 'sayHello' function. You should see the same output in the
      * console.
      */
 
-
-
+    let myName = "Nicole";
+    console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
     var random = Math.floor((Math.random() * 3) + 1);
 
     /**
-     * TODO:
+     * TODO: Done
      * Create a function called 'isTwo' that takes a number as a parameter.
      * The function should return a boolean value based on whether or not the passed
      * number is the number 2.
@@ -60,21 +60,11 @@
      * number)
      */
 
-
-
-
-
-
-
-
-
-    isTwo();
-    console.log(isTwo(anyNumber));
-    function isTwo(anyNumber) {
-        if (anyNumber === 2) {
-        return true;
-        } else { return false }
+function isTwo (num) {
+return num === 2;
     }
+
+console.log(isTwo(random), random);
 
 
     /**
@@ -89,10 +79,12 @@
      * > calculateTip(0.15, 33.42) // returns 5.013
      */
 
+function calculateTip (preTipTotal, tipPercent) {
+    let totalAfterTip = (preTipTotal) * (tipPercent);
+    return totalAfterTip;
+}
 
-    function calculateTip(totalBill, tipPercent) {
-        return console.log (totalBill * tipPercent);
-    }
+
 
     /**
      * TODO:
@@ -101,10 +93,17 @@
      * then display the dollar amount they should tip
      */
 
-    let tipPercent = prompt("What percentage would you like to tip?")
-    let totalBill = prompt("What is your total bill?")
-    console.log (calculateTip(totalBill, tipPercent));
-    alert("Here is your tip amount." + calculateTip(totalBill, tipPercent));
+
+
+
+
+
+
+
+    // let tipPercent = prompt("What percentage would you like to tip?")
+    // let totalBill = prompt("What is your total bill?")
+    // console.log (calculateTip(totalBill, tipPercent));
+    // alert("Here is your tip amount." + calculateTip(totalBill, tipPercent));
 
     /**
      * TODO:
@@ -121,8 +120,13 @@
      * > applyDiscount(45.99, 0.12) // 40.4712
      */
 
-function applyDiscount (priceInput, discountPercent) {
-    let applyDiscount = ((priceInput) * (discountPercent));
-    }
+
+
+
+
+
+// function applyDiscount (priceInput, discountPercent) {
+//     let applyDiscount = ((priceInput) * (discountPercent));
+//     }
 
 })();
