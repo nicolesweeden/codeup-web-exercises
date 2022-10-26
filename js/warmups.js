@@ -17,7 +17,7 @@
 
     let apples = {
         name: "apples"
-        quantity: 3,
+        quantity: 3;
         price: "1.99"
     };
     console.log(getPrice(apples));
@@ -53,12 +53,62 @@
     console.log(getlongestString(colors));
 
 
+//Warmup 10/26/22
+// Write a function that takes in an array of objects and returns the object with the largest height property.
 
+    const hamsters = [
+        {
+            name: "Hamtaro",
+            heightInMM: 86,
+            fur: ['orange', 'white'],
+            gender: "male",
+            dateOfBirth: "August 6"
+        }, {
+            name: "Bijou",
+            heightInMM: 75,
+            fur: ['white'],
+            gender: "female",
+            dateOfBirth: "July 10"
+        }, {
+            name: "Oxnard",
+            heightInMM: 100,
+            fur: ['grey', 'white'],
+            gender: "male",
+            dateOfBirth: "May 3"
+        }, {
+            name: "Boss",
+            heightInMM: 120,
+            fur: ['brown', 'white'],
+            gender: "male",
+            dateOfBirth: "September 21"
+        }, {
+            name: "Snoozer",
+            heightInMM: 85,
+            fur: ['brown', 'white', "pink"],
+            gender: "male",
+            dateOfBirth: "January 14"
+        }
+    ];
 
+    getTallestHamster(hamsters); // should return {name: "Boss", heightInMM: 120, fur: ['brown', 'white'], gender: "male", dateOfBirth: "September 21"};
+//My answer (returns undefined):
+//     function  getTallestHamster (arr) {
+//         return Math.max(heightInMM);
+//     }
 
+    //will end up with object with highest height property. similar to the get longest string (above). David's answer:
 
+    function getTallestHamster(arr) {
+        let tallest = {heightInMM: 0};
+        arr.forEach(function (el) { //creating a loop. will use forEach for this (for looping through an array)
+            if (el.heightInMM > tallest.heightInMM) {
+                tallest = el;
+            }
+        })
+        return tallest;
+    }
 
-
+console.log(getTallestHamster(hamsters));
 
 
 
