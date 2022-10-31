@@ -11,7 +11,7 @@
     // apples.price = "1.99"
     // getPrice(apples)
 
-    function price(object) {
+    function price (object) {
         return object.price
     }
 
@@ -28,16 +28,7 @@
     //     Ex. const arr = [“Green”, “Blue”, “Periwinkle”];
     // getLongestString(arr) // Returns “Periwinkle”
 
-
-//["Pink", "Lavender", "Ecru"]
-    let longest = arr.reduce(
-        function (a, b) {
-            return a.length > b.length ? a : b;
-        }
-    );
-    console.log(longest);
-
-//David's solution: study this bc there will be something similar on assessment. this is a "bucket" problem.
+    //David's solution: study this bc there will be something similar on assessment. this is a "bucket" problem.
 
     function getlongestString(arr) {
         let longestStr = "";
@@ -110,7 +101,40 @@
 
 console.log(getTallestHamster(hamsters));
 
+//Warmup for 10/31
+
+    // Warmup: Write FizzBuzz from 1-100;
+    // Numbers evenly divisible by 3 should be replaced by Fizz
+    // Numbers evenly divisible by 5 should be replaced by Buzz
+    // Numbers evenly divisible by both 3 and 5 should be replaced by FizzBuzz
+    // All other numbers should be printed in the console.
 
 
-    //Dont delete bottom of IIFE
+    let f = "fizz";
+    let b = "buzz";
+    for (let num = 1; num <=100 ; num++) {
+        if (num% 3 === 0 && num % 5 ===0){
+            console.log(num + f + b);
+        }
+        else if (num % 5 === 0){
+            console.log(num+b);
+        }
+        else if (num % 3 === 0){
+            console.log(num+f);
+        }
+        else {
+            console.log(num);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    //Don't delete bottom of IIFE
 })();
