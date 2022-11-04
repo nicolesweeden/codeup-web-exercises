@@ -1,28 +1,24 @@
 
-
 .jumbotron {
     background-image: url("../img/pizza.png");
     background-size: cover;
     height: 346px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .welcome {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     margin-top: 3.5em;
     text-align: center;
-    opacity: .5;
 }
 
-/*Code below not working. Intention: make text opaque but it is staying transparent. Try different classes? */
-.welcome .banner {
-    color: black;
-    opacity: 1;
+.build {
+    padding-bottom: .7em;
 }
 
-/*Code below not working. Intention: Hide media for smaller screens but why is the jumbotron still visible when i emulate smaller screens with inspector tool? */
-@media (max-width: 767px) {
-    .content-to-hide {
-        display: none;
-    }
+.badge {
+    color: white;
+    margin: .5em;
 }
