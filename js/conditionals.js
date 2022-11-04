@@ -22,21 +22,22 @@
  * console.logging the function's return value
  */
 
-function analyzeColor (input) {
-    if (input === "red") {
-        return "Strawberries are red.";
-    } else if (input === "yellow") {
-        return "Daisies are yellow.";
-    } else if (input === "blue") {
-        return "Blue is the color of the sea.";
-    } else if (input === "green") {
-        return "Grass is green.";
-    } else {
-        return "I don't know anything about " + input;
-    }
-}
-
-
+// function analyzeColor (input) {
+//     if (input === "red") {
+//         return "Strawberries are red.";
+//     } else if (input === "yellow") {
+//         return "Daisies are yellow.";
+//     } else if (input === "blue") {
+//         return "Blue is the color of the sea.";
+//     } else if (input === "green") {
+//         return "Grass is green.";
+//     } else {
+//         return "I don't know anything about " + input + ".";
+//     }
+// }
+//
+// console.log(analyzeColor("yellow"));
+// console.log(analyzeColor("turquoise"));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -45,37 +46,46 @@ function analyzeColor (input) {
 // will contain a different color every time the page loads)
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
-/*
- * TODO:
- * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
- * You should see a different message every time you refresh the page
- */
+
+TODO: DID
+Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
+You should see a different message every time you refresh the page
 
 
 
-
-console.log(analyzeColor(randomColor));
-
-
-
+// console.log(analyzeColor(randomColor));
 
 
 /**
- * TODO: DID NOT DO BC NOT DONE ABOVE
+ * TODO: DID
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
 
+function analyzeColor(input){
+
+    switch(input){
+        case "red":
+            return "Strawberries are red.";
+        case "yellow":
+            return "Daisies are yellow.";
+        default:
+            return "I don't know anything about " + input + ".";
+    }
+
+}
+
 /**
- * TODO:
+ * TODO: DID
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
 
-/* ########################################################################## */
+var userInput = prompt("Enter a color:");
+alert(analyzeColor(userInput));
 
 /**
- * TODO:
+ * TODO: DID
  * Suppose there's a promotion in Walmart, each customer is given a randomly
  * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
  * no discount, if your lucky number is 1 you'll get a 10% discount, if it's 2,
@@ -94,36 +104,35 @@ console.log(analyzeColor(randomColor));
  * return value.
  */
 
-function calculateTotal() {
-    let luckyNumber = Math.floor(Math.random() * 6);
-    if luckyNumber === 0;
-    alert("Sorry, you have no discount today.");
+function calculateTotal(luckyNumber, total) {
+    let totalWithDiscount;
+    if (luckyNumber === 0) {
+        totalWithDiscount = total;
+    } else if (luckyNumber === 1) {
+            totalWithDiscount = total - (.1 * total);
+    } else if (luckyNumber === 2) {
+        totalWithDiscount = total - (.25 * total);
+    } else if (luckyNumber === 3) {
+        totalWithDiscount = total - (.35 * total);
+    } else if (luckyNumber === 4) {
+        totalWithDiscount = total - (.5 * total);
+    } else if(luckyNumber === 5) {
+        totalWithDiscount = 0;
+    }
+
+    return totalWithDiscount;
 }
 
-else
-if {
-    luckyNumber === 1;
-alert("Congrats! You get a 10% discount!");
-} else
-if {
-    luckyNumber === 2;
-alert("Congrats! You get a 25% discount!");
-} else
-if {
-    luckyNumber === 3;
-alert("Congrats! You get a 35% discount!");
-} else
-if {
-    luckyNumber === 4;
-alert("Congrats! You get a 50% discount!");
-} else
-if {
-    luckyNumber === 5;
-alert("Congrats! You everything for FREE!");
-break;
+// console.log(calculateTotal(0, 100));
+// console.log(calculateTotal(1, 100));
+// console.log(calculateTotal(2, 100));
+// console.log(calculateTotal(3, 100));
+// console.log(calculateTotal(4, 100));
+// console.log(calculateTotal(5, 100));
+
 
 /**
- * TODO:
+ * TODO: Did
  * Uncomment the line below to generate a random number between 0 and 5.
  * (In this line of code, 0 is inclusive, and 6 is exclusive)
  * Prompt the user for their total bill, then use your `calculateTotal` function
@@ -135,13 +144,13 @@ break;
 var luckyNumber = Math.floor(Math.random() * 6);
 prompt("Enter your total bill.")
 
-function calculateTotal() {
-
+calculateTotal(luckyNumber, input);
 }
+alert("Hello! Your lucky number is: " + luckyNumber + ". The total before the discount is: " + input + " and your new total is: " + calculateTotal(luckyNumber, input) + ".");
 
 
 /**
- * TODO:
+ * TODO: Did
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
  * would like to enter a number. If they click 'Ok', prompt the user for a
  * number, then use 3 separate alerts to tell the user:
@@ -159,8 +168,37 @@ function calculateTotal() {
  * HINT: The way we prompt for a value could be improved
  */
 
-let number = confirm("Would you like to enter a number?");
-
-if number === true {
-
+function inputNumber() {
+    if(confirm("Enter a number:")){
+        let input = parseInt(prompt("Please enter a number."));
+        if(!isNaN(input)) {
+            alert(isEvenNumber(input));
+            alert(adding100(input))
+            alert(isPositiveorNegative(input))
+        } else {
+            alert("That is not a number.");
+        }
+    }
 }
+
+function isEvenNumber (input){
+    if (input % 2 === 0) {
+        return input + " is an even number.";
+    } else {
+        return input + " is an odd number.";
+    }
+}
+
+function adding100 (input) {
+    return "Your number + 100 is: " + (input + 100) + ".";
+}
+
+function isPositiveorNegative (input) {
+    if (input >= 0) {
+        return "That number is a positive number.";
+    } else {
+        return "That number is a negative number.";
+    }
+}
+
+inputNumber();
