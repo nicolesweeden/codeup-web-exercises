@@ -22,44 +22,43 @@
  * console.logging the function's return value
  */
 
-
-/*let analyzeColor = prompt("Enter a color.").toLowerCase();
-
-switch (analyzeColor) {
-    case "red":
-        alert("Apples are red.");
-        break;
-    case "blue":
-        alert("The ocean is blue.");
-        break;
-    case "yellow":
-        alert("I love yellow.");
-        break;
-    default:
-        alert("! Nice!");
-        break;
+function analyzeColor (input) {
+    if (input === "red") {
+        return "Strawberries are red.";
+    } else if (input === "yellow") {
+        return "Daisies are yellow.";
+    } else if (input === "blue") {
+        return "Blue is the color of the sea.";
+    } else if (input === "green") {
+        return "Grass is green.";
+    } else {
+        return "I don't know anything about " + input;
+    }
 }
-*/
+
+
 
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
-//                  will contain a different color every time the page loads)
+// will contain a different color every time the page loads)
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
 /*
- * TODO: NOT DONE
+ * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
 
-prompt("Enter a color");
-  if (randomColor === "red") {
-   alert("Apples are red.");
-} else if (randomColor === "orange"); {
-   alert("Oranges are orange.");
-}
+
+
+
+console.log(analyzeColor(randomColor));
+
+
+
+
 
 /**
  * TODO: DID NOT DO BC NOT DONE ABOVE
@@ -95,26 +94,33 @@ prompt("Enter a color");
  * return value.
  */
 
-function calculateTotal () {
+function calculateTotal() {
     let luckyNumber = Math.floor(Math.random() * 6);
     if luckyNumber === 0;
     alert("Sorry, you have no discount today.");
-} else if {
+}
+
+else
+if {
     luckyNumber === 1;
-    alert("Congrats! You get a 10% discount!");
-} else if {
+alert("Congrats! You get a 10% discount!");
+} else
+if {
     luckyNumber === 2;
-    alert("Congrats! You get a 25% discount!");
-} else if {
+alert("Congrats! You get a 25% discount!");
+} else
+if {
     luckyNumber === 3;
-    alert("Congrats! You get a 35% discount!");
-} else if {
+alert("Congrats! You get a 35% discount!");
+} else
+if {
     luckyNumber === 4;
-    alert("Congrats! You get a 50% discount!");
-} else if {
+alert("Congrats! You get a 50% discount!");
+} else
+if {
     luckyNumber === 5;
-    alert("Congrats! You everything for FREE!");
-    break;
+alert("Congrats! You everything for FREE!");
+break;
 
 /**
  * TODO:
@@ -129,7 +135,7 @@ function calculateTotal () {
 var luckyNumber = Math.floor(Math.random() * 6);
 prompt("Enter your total bill.")
 
-function calculateTotal () {
+function calculateTotal() {
 
 }
 
