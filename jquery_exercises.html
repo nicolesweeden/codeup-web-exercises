@@ -3,14 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <style>
+        body {
+            background-color: lavenderblush;
+            font-family: "Baloo 2";
+        }
+
+        h1 {
+            color: purple;
+            font-family: "Lobster Two";
+        }
+
+        #maybe {
+            color: dimgray;
+        }
+
+        #sub-heading {
+            color: mediumorchid;
+        }
+
+        #sub-heading2 {
+            color: mediumorchid;
+        }
+
+        #sub-heading3 {
+            color: mediumorchid;
+        }
+
+    </style>
+
 </head>
 <body>
 
-$(function() {
-alert( 'The DOM has finished loading!' );
-});
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<div>
+
+    <h1 class="codeup">Really good TV shows I should watch:</h1>
+    <p id="sub-heading">Ordered from 'must-see' to 'maybe-see'</p>
+
+    <ul>
+        <li>The Leftovers (NOTE: It is only 3 seasons)</li>
+        <li>The Sopranos</li>
+        <li id="maybe">The Wire</li>
+    </ul>
+
+    <h1 class="codeup">Movies I should watch:</h1>
+    <p id="sub-heading2">Ordered from 'must-see' to 'maybe-see'</p>
+    <ul id="codeup">
+        <li>Wakanda Forever</li>
+        <li>Smile</li>
+        <li>The Menu</li>
+        <li>Haloween Ends</li>
+        <li id="maybe2">Black Adam</li>
+        <li id="maybe3">Glass Onion</li>
+    </ul>
+
+    <h1>To Do</h1>
+    <p id="sub-heading3">Ordered from 'must-do' to 'maybe-do'</p>
+    <ul>
+        <li id="must">Feed cat</li>
+        <li>Buy milk</li>
+        <li>Wash car</li>
+        <li>Do laundry</li>
+        <li>Mop floor</li>
+    </ul>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script>
+    // $(function() {
+    //     alert( 'The DOM has finished loading!' );
+    //     alert($("#maybe").html());
+    // });
+    //
+    // $(function() {
+    //     alert($("#maybe2").html());
+    // });
+    //
+    // $(function() {
+    //     alert($("#maybe3").html());
+    // });
+    //
+    // $(function() {
+    //     alert($("#must").html());
+    // });
+
+    $(function () {
+        // alert($('#must').html());
+
+        // $('#codeup').css('border', '1px solid red');
+
+        $('li').css('font-size', '20px');
+
+        // $('h1, p, li').css('border', '2px solid black');
+
+        alert($('h1').html());
+
+    });
+
+</script>
 
 </body>
 </html>
