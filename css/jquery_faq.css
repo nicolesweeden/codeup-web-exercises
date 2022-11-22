@@ -1,0 +1,14 @@
+.invisible {
+    visibility: hidden;
+}
+
+.color {
+    background-color: saddlebrown;
+}
+
+body {
+    background-color: darkslategray;
+    color: antiquewhite;
+    font-family: "ibm plex serif";
+    /*font-size: larger;*/
+}
