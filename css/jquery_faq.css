@@ -4,6 +4,9 @@
 
 .color {
     background-color: saddlebrown;
+    padding: 0.1em 0.2em;
+    position:relative;
+    border:2px dashed pink;
 }
 
 body {
