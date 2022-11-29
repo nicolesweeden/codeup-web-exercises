@@ -47,3 +47,8 @@ body {
     background-color: #4CAF50; /* Green */
     color: white;
 }
+
+.jumbotron {
+    background-color: darkslategray;
+
+}
