@@ -27,10 +27,60 @@
     // TODO: Create an AJAX GET request for the file under data/inventory.json
     $.get('data/inventory.json').done(function(data) {
         console.log(data);
-
     })
 
+    function tablemaker(data) {
+        var tablecontents = '<tr>'
+        tablecontents += '<td>' + data.title + '</td>';
+        tablecontents += '<td>' + data.quantity + '</td>';
+        tablecontents += '<td>' + data.price + '</td>';
+        tablecontents += '<td>' + data.categories + '</td>';
+        tablecontents += '</tr>';
+        console.log(tablecontents)
+        return tablecontents
+    }
 
+    function createhtml(data) {
+        var html = '';
+        for (let i = 0; i < data.length; i++) {
+            html += tablemaker(data[i])
+        }
+        return html
+    }
+
+    $('#insertProducts').html(createhtml(data))
+
+})
+
+$("#refresh").click(function () {
+    $.get("data/inventory.json").done(function (data) {
+        console.log(data);
+
+        function tablemaker(data) {
+            var tablecontents = '<tr>'
+            tablecontents += '<td>' + data.title + '</td>';
+            tablecontents += '<td>' + data.quantity + '</td>';
+            tablecontents += '<td>' + data.price + '</td>';
+            tablecontents += '<td>' + data.categories + '</td>';
+            tablecontents += '</tr>';
+            console.log(tablecontents)
+            return tablecontents
+        }
+
+        function createhtml(data) {
+            var html = '';
+            for (let i = 0; i < data.length; i++) {
+                html += tablemaker(data[i])
+            }
+            return html
+        }
+
+        $('#insertProducts').html(createhtml(data))
+
+    })
+});
+
+})();
 
 
     // TODO: Take the data from inventory.json and append it to the products table
