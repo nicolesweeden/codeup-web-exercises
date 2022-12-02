@@ -27,14 +27,19 @@
 (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-    $.get('data/inventory.json').done(function(data) {
+    // TODO: Take the data from inventory.json and append it to the products table
+    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+    //             its contents and fields
+    //       HINT: You will want to target #insertProducts for your new HTML elements
+
+
+function getData() {
+    $.get('data/inventory.json').done(function (data) {
         console.log(data);
 
-
-
-
-    var html = "";
-        for(var i = 0; i < data.length; i++) {
+        var html = "";
+        for (var i = 0; i < data.length; i++) {
+            // html = html + '<tr'
             html += '<tr>';
             html += '<td>' + data[i].title + '</td>';
             html += '<td>' + data[i].quantity + '</td>';
@@ -42,22 +47,14 @@
             html += '<td>' + data[i].categories + '</td>';
             html += '</tr>';
         }
-  $("#insertProducts").html(html);
+
+        $("#insertProducts").html(html);
     })
+}
 
+    $("#refresh").click(getData)
+getData()
 
-    // $("#refresh").click(function () {
-    //     $.get("data/inventory.json").done(function (data) {
-    //     })}
-
-
-
-
-
-    // TODO: Take the data from inventory.json and append it to the products table
-    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
-    //             its contents and fields
-    //       HINT: You will want to target #insertProducts for your new HTML elements
 })();
 </script>
 
