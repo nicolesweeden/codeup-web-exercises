@@ -1,1 +1,0 @@
-const GH_KEY = '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';
