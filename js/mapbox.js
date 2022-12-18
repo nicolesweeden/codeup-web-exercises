@@ -16,7 +16,7 @@ var sushiDen = {
 
 
 function placeMarkerAndPopup(info, token, map) {
-    geocode(info.address, token).then(function(coordinates) {
+    geocode(info.address, token).then(function (coordinates) {
         var popup = new mapboxgl.Popup()
             .setHTML(info.popupHTML);
         var marker = new mapboxgl.Marker()
@@ -30,7 +30,55 @@ function placeMarkerAndPopup(info, token, map) {
 placeMarkerAndPopup(sushiDen, accessToken, map);
 
 
+//Refactor your code to display at least three of your favorite restaurants with information about each. Create an array of objects with information about each restaurant to accomplish this. Use a .forEach() loop rather than a for loop.
+
+// let sum = 0;
+// const restaurants = [
 //
+// var sushi = {
+//     address: "1487 Pearl St, Denver, CO 80210",
+//     popupHTML: "<p>Sushi Den</p>"
+// };
+//
+// var stoicGenuine = {
+//     address: "1701 Wynkoop St, Denver, CO 80202",
+//     popupHTML: "<p>Stoic & Genuine</p>"
+// };
+//
+// var humboldt = {
+//     address: "1700 Humboldt St, Denver, CO 80218",
+//     popupHTML: "<p>Humboldt Kitchen + Bar</p>"
+// };
+//
+// ]
+
+let sum = 0;
+const restaurants = [
+    {
+        "name": "Sushi Den",
+        "type": "Sushi",
+        "address": "1487 Pearl St, Denver, CO 80210",
+    },
+    {
+        "name": "Stoic & Genuine",
+        "type": "Seafood",
+        "address": "1701 Wynkoop St, Denver, CO 80202",
+    },
+    {
+        "name": "Humboldt Kitchen + Bar",
+        "type": "American",
+        "address": "1700 Humboldt St, Denver, CO 80218",
+    }
+]
+restaurants.forEach(mapRest)
+
+function mapRest (item) {
+    sum += item;
+}
+
+console.log(placeMarkerAndPopup(restaurants));
+
+// //Weather Map html
 // (function() {
 //     "use strict";
 //     $(document).ready(function() {
